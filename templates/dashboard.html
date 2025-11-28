@@ -8,7 +8,7 @@
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
-    let dataFromDB = {{ data|tojson }};
+    let dataFromDB = {{ data | tojson | safe }};
 </script>
 <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
 
