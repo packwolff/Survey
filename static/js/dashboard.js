@@ -18,3 +18,5 @@ Plotly.newPlot('chart-rating', [{
     x: ratings,
     type: 'histogram'
 }], { title: "Rating Distribution" });
+
+

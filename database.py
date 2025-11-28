@@ -3,6 +3,8 @@ import sqlite3
 conn = sqlite3.connect('survey.db')
 cur = conn.cursor()
 
+#this command is to delete a response
+#cur.execute("DELETE FROM responses;")
 cur.execute('''
 CREATE TABLE IF NOT EXISTS responses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -13,6 +15,7 @@ CREATE TABLE IF NOT EXISTS responses (
     comment TEXT
 )
 ''')
+
 
 conn.commit()
 conn.close()
